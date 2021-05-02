@@ -241,8 +241,7 @@
             <h1 style="display: none">如何写规范的文档</h1>
             
             <div class="markdown-body">
-              <p>@<a href="%E5%A6%82%E4%BD%95%E5%86%99%E4%B8%80%E7%AF%87%E7%AE%80%E5%8D%95%E7%9A%84markdown%E6%96%87%E6%A1%A3">TOC</a></p>
-<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><ul>
+              <h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><ul>
 <li>换行是不要钱的，只要不是连续的文本都可以在中间加一个或多个换行，无论输入多少空行，最终显示的效果也是没有空行的。</li>
 <li>本质都是文字，只是会使用一些符号来放在这一行文本的开头，来设置这一行文本的格式。</li>
 <li>注意标记符号和文本内容要有一个距离，一般是一个空格或一个换行。</li>
@@ -269,7 +268,8 @@
 
 <h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p>图片都是根据链接来得到的，便于移植。</p>
 <h2 id="固定大小形式："><a href="#固定大小形式：" class="headerlink" title="固定大小形式："></a>固定大小形式：</h2><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs less">!<span class="hljs-selector-attr">[图片描述信息]</span>(link)<br>!<span class="hljs-selector-attr">[CSDN编辑工具]</span>(<span class="hljs-attribute">https</span>:<span class="hljs-comment">//img-blog.csdnimg.cn/20210501015405692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjg5NzEx,size_16,color_FFFFFF,t_70)</span><br></code></pre></td></tr></table></figure>
-<p>下面这张图就是上面第二行的图片效果：<br><img src="https://img-blog.csdnimg.cn/20210501015405692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjg5NzEx,size_16,color_FFFFFF,t_70" srcset="/aLifelongLove/img/loading.gif" lazyload alt="CSDN编辑工具"></p>
+<p>下面这张图就是上面第二行的图片效果：</p>
+<p><img src="https://img-blog.csdnimg.cn/20210501015405692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjg5NzEx,size_16,color_FFFFFF,t_70" srcset="/aLifelongLove/img/loading.gif" lazyload alt="CSDN编辑工具"></p>
 <h2 id="可变大小形式"><a href="#可变大小形式" class="headerlink" title="可变大小形式"></a>可变大小形式</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs routeros">&lt;img <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;mpx;&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;npx;&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-string">&quot;message&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;link&quot;</span>/&gt;<br>&lt;img <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;500px;&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;250px;&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-string">&quot;CSDN编辑工具&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;https://img-blog.csdnimg.cn/20210501015405692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjg5NzEx,size_16,color_FFFFFF,t_70&quot;</span>/&gt;<br></code></pre></td></tr></table></figure>
 <p>在第一行中，<code>m</code> <code>n</code> <code>message</code> <code>link</code>依次是宽，高，图片信息，图片链接<br>第二行是一个示例，它的效果如下：<br><img width="500px;" height="250px;" alt="CSDN编辑工具" src="https://img-blog.csdnimg.cn/20210501015405692.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjg5NzEx,size_16,color_FFFFFF,t_70" srcset="/aLifelongLove/img/loading.gif" lazyload/></p>
 <h1 id="其他一些结构"><a href="#其他一些结构" class="headerlink" title="其他一些结构"></a>其他一些结构</h1><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">+</span> 第一行<br><span class="hljs-bullet">+</span> 第二行<br><span class="hljs-bullet">+</span> 第三行<br><br><span class="hljs-bullet">1.</span> 第一行<br><span class="hljs-bullet">2.</span> 第二行<br><span class="hljs-bullet">3.</span> 第三行<br></code></pre></td></tr></table></figure>
@@ -305,7 +305,9 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/aLifelongLove/categories/%E8%A7%84%E8%8C%83/">规范</a>
+                      <a class="hover-with-bg" href="/aLifelongLove/categories/%E5%85%B4%E4%BC%9F%E6%92%B0%E5%86%99/">兴伟撰写</a>
+                    
+                      <a class="hover-with-bg" href="/aLifelongLove/categories/%E6%95%99%E7%A8%8B/">教程</a>
                     
                   </div>
                 
@@ -313,11 +315,9 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/aLifelongLove/tags/%E6%95%99%E7%A8%8B/">教程</a>
-                    
-                      <a class="hover-with-bg" href="/aLifelongLove/tags/%E5%85%B4%E4%BC%9F%E6%92%B0%E5%86%99/">兴伟撰写</a>
-                    
                       <a class="hover-with-bg" href="/aLifelongLove/tags/markdown/">markdown</a>
+                    
+                      <a class="hover-with-bg" href="/aLifelongLove/tags/%E6%96%87%E6%B3%95/">文法</a>
                     
                   </div>
                 
